@@ -8,7 +8,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.Position;
 import org.firstinspires.ftc.robotcore.external.navigation.YawPitchRollAngles;
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.util.Constants;
 import org.firstinspires.ftc.vision.VisionPortal;
 import org.firstinspires.ftc.vision.apriltag.AprilTagDetection;
@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Camera implements AutoCloseable {
-    private final Ophelia m_robot;
+    private final Ganymede m_robot;
     private final VisionPortal visionPortal;
     private final AprilTagProcessor aprilTagProcessor;
     private long lastDetectionTime = 0;
 
-    public Camera(Ophelia robot, Telemetry telemetry) {
+    public Camera(Ganymede robot, Telemetry telemetry) {
         m_robot = robot;
         telemetry.addData("Camera Status", "Initializing...");
 

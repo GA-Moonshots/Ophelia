@@ -10,7 +10,7 @@ import org.firstinspires.ftc.robotcore.external.Telemetry;
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
 import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.util.Constants;
 import org.firstinspires.ftc.teamcode.util.roadrunnerfiles.ThreeDeadWheelLocalizer;
 //import org.firstinspires.ftc.teamcode.util.sensors.DistanceSensor;
@@ -29,11 +29,11 @@ public class Mecanum extends RoadRunner {
     private IMU imu;
 
     // USEFUL REFERENCES
-    private final Ophelia robot;
+    private final Ganymede robot;
     public Telemetry telemetry;
 
     // CONSTRUCTOR
-    public Mecanum(Ophelia robot, Pose2d pose) {
+    public Mecanum(Ganymede robot, Pose2d pose) {
         // setup the RoadRunner parent class
         super(robot.opMode.hardwareMap, pose);
 

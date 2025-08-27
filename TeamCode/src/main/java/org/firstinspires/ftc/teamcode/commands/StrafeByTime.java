@@ -5,7 +5,7 @@ import com.acmerobotics.roadrunner.Action;
 import com.seattlesolvers.solverslib.command.CommandBase;
 import com.seattlesolvers.solverslib.util.Timing;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 
 import java.util.concurrent.TimeUnit;
@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class StrafeByTime extends CommandBase {
 
     // REFERENCES
-    private Ophelia robot;
+    private Ganymede robot;
     private Mecanum mecanum;
 
     // ASSETS
@@ -29,7 +29,7 @@ public class StrafeByTime extends CommandBase {
     private FtcDashboard dashboard;
 
 
-    public StrafeByTime(Ophelia robot, double timeout, double speed) {
+    public StrafeByTime(Ganymede robot, double timeout, double speed) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.dashboard = FtcDashboard.getInstance();

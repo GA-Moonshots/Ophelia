@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.util.experiments;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.seattlesolvers.solverslib.command.SubsystemBase;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.util.Constants;
 
 public class ServoTest extends SubsystemBase {
@@ -12,7 +12,7 @@ public class ServoTest extends SubsystemBase {
     //static
 
     // constructor  for the servo
-    public ServoTest(Ophelia ophelia){
+    public ServoTest(Ganymede ophelia){
         servo = ophelia.hardwareMap.get(Servo.class, Constants.WRIST_SERVO_NAME);
     }
 

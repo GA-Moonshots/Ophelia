@@ -2,12 +2,12 @@ package org.firstinspires.ftc.teamcode.util.experiments;
 
 import com.seattlesolvers.solverslib.command.CommandBase;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 
 public class ServoCommands extends CommandBase {
-    private final Ophelia robot;
+    private final Ganymede robot;
     private final ServoTest servo;
-    public ServoCommands(Ophelia robot){
+    public ServoCommands(Ganymede robot){
       this.robot = robot;
       this.servo = robot.servo;
 

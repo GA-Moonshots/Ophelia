@@ -4,14 +4,14 @@ import com.acmerobotics.dashboard.FtcDashboard;
 import com.seattlesolvers.solverslib.command.CommandBase;
 import com.seattlesolvers.solverslib.util.Timing;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 
 import java.util.concurrent.TimeUnit;
 
 public class RotateByIMU extends CommandBase {
 
-    private final Ophelia robot;
+    private final Ganymede robot;
     private final Mecanum mecanum;
 
     // Desired rotation speed and target heading
@@ -22,7 +22,7 @@ public class RotateByIMU extends CommandBase {
     protected Timing.Timer timer;
     private final FtcDashboard dashboard;
 
-    public RotateByIMU(Ophelia robot, double targetAngleOffset, double timeout, double speed) {
+    public RotateByIMU(Ganymede robot, double targetAngleOffset, double timeout, double speed) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.speed = speed;

@@ -6,7 +6,7 @@ import com.qualcomm.hardware.limelightvision.Limelight3A;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.util.Constants;
 import org.firstinspires.ftc.teamcode.util.MoonBase;
 
@@ -24,7 +24,7 @@ public class SensorPackage extends MoonBase {
     private int filteredDetections = 0;
     private int acceptedDetections = 0;
 
-    public SensorPackage(Ophelia robot) {
+    public SensorPackage(Ganymede robot) {
         super(robot);
 
         try {

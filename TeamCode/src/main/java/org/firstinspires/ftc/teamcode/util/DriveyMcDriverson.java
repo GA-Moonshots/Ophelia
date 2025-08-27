@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode.util;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.seattlesolvers.solverslib.command.CommandOpMode;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 
 
 @TeleOp(name="TeleOp - Main")
@@ -15,6 +15,6 @@ public class DriveyMcDriverson extends CommandOpMode {
         telemetry.addData("Is it working: ", isWorking);
         telemetry.update();
 
-        Ophelia m_robot = new Ophelia(this);
+        Ganymede m_robot = new Ganymede(this);
     }
 }

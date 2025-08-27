@@ -6,14 +6,14 @@ import com.acmerobotics.roadrunner.Action;
 import com.seattlesolvers.solverslib.command.CommandBase;
 import com.seattlesolvers.solverslib.util.Timing;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 import org.firstinspires.ftc.teamcode.util.Constants;
 
 public class Rotate extends CommandBase {
 
     // REFERENCES
-    private final Ophelia robot;
+    private final Ganymede robot;
     private final Mecanum mecanum;
 
     // ASSETS
@@ -28,7 +28,7 @@ public class Rotate extends CommandBase {
     private final FtcDashboard dashboard;
 
     // Constructor to initialize the command
-    public Rotate(Ophelia robot, double targetAngle) {
+    public Rotate(Ganymede robot, double targetAngle) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.targetAngle = targetAngle;
@@ -40,7 +40,7 @@ public class Rotate extends CommandBase {
         addRequirements(mecanum);
     }
 
-    public Rotate(Ophelia robot, double targetAngle, double timeout) {
+    public Rotate(Ganymede robot, double targetAngle, double timeout) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.targetAngle = targetAngle;

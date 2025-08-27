@@ -15,7 +15,7 @@ import com.seattlesolvers.solverslib.util.Timing;
 
 import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
 import org.firstinspires.ftc.robotcore.external.navigation.Pose3D;
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.commands.StrafeToPose;
 import org.firstinspires.ftc.teamcode.subsystems.SensorPackage;
 
@@ -28,7 +28,7 @@ import java.util.List;
  */
 public class AprilLimeDetect extends CommandBase {
     // Robot and subsystem references
-    private final Ophelia robot;
+    private final Ganymede robot;
     private final SensorPackage sensors;
     private final GamepadEx player1;
     private Timing.Timer timer;
@@ -76,7 +76,7 @@ public class AprilLimeDetect extends CommandBase {
      *
      * @param robot The robot container with access to subsystems
      */
-    public AprilLimeDetect(Ophelia robot) {
+    public AprilLimeDetect(Ganymede robot) {
         this.robot = robot;
         this.sensors = robot.sensors;
         this.player1 = robot.player1;

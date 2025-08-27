@@ -4,14 +4,14 @@ import com.acmerobotics.dashboard.FtcDashboard;
 import com.seattlesolvers.solverslib.command.CommandBase;
 import com.seattlesolvers.solverslib.gamepad.GamepadEx;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 import org.firstinspires.ftc.teamcode.util.Constants;
 
 public class Drive extends CommandBase {
     private final Mecanum mecanum;
     private GamepadEx player1;
-    private Ophelia robot;
+    private Ganymede robot;
 
     private final FtcDashboard dashboard;
 
@@ -19,7 +19,7 @@ public class Drive extends CommandBase {
     private double forwardSpeed;
     private double turnSpeed;
 
-    public Drive(Ophelia robot) {
+    public Drive(Ganymede robot) {
         // pulling off some handy references
         this.robot = robot;
         this.mecanum = robot.mecanum;

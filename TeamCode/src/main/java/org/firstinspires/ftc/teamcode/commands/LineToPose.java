@@ -7,14 +7,14 @@ import com.acmerobotics.roadrunner.Pose2d;
 import com.seattlesolvers.solverslib.command.CommandBase;
 import com.seattlesolvers.solverslib.util.Timing;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 import org.firstinspires.ftc.teamcode.util.Constants;
 
 public class LineToPose extends CommandBase {
 
     // REFERENCES
-    private Ophelia robot;
+    private Ganymede robot;
     private Mecanum mecanum;
 
     // ASSETS
@@ -29,7 +29,7 @@ public class LineToPose extends CommandBase {
     private FtcDashboard dashboard;
 
     // Constructor to initialize the command
-    public LineToPose(Ophelia robot, Pose2d targetPose) {
+    public LineToPose(Ganymede robot, Pose2d targetPose) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.targetPose = targetPose;
@@ -40,7 +40,7 @@ public class LineToPose extends CommandBase {
         addRequirements(mecanum);
     }
 
-    public LineToPose(Ophelia robot, Pose2d targetPose, double timeout) {
+    public LineToPose(Ganymede robot, Pose2d targetPose, double timeout) {
         this.robot = robot;
         this.mecanum = robot.mecanum;
         this.targetPose = targetPose;

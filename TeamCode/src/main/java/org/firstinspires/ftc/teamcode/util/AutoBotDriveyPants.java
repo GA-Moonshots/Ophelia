@@ -2,7 +2,7 @@ package org.firstinspires.ftc.teamcode.util;
 
 import com.seattlesolvers.solverslib.command.CommandOpMode;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.commands.SavePoseCommand;
 
 /**
@@ -53,7 +53,7 @@ public class AutoBotDriveyPants extends CommandOpMode {
          We pass in our autonomous config variables, which signals to the robot we want to be in
          autonomous mode instead of in teleop mode, which would take no params besides this.
          */
-        Ophelia m_robot = new Ophelia(this, isRed, left);
+        Ganymede m_robot = new Ganymede(this, isRed, left);
 
         // The idea here is to after stop, it will schedule this last command after shutting off
         // IDK if it does - Mr.A, 2024

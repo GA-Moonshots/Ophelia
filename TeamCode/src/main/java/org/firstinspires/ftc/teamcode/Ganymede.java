@@ -19,11 +19,10 @@ import org.firstinspires.ftc.teamcode.commands.SplineToPose;
 import org.firstinspires.ftc.teamcode.commands.StrafeToPose;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 import org.firstinspires.ftc.teamcode.subsystems.SensorPackage;
-import org.firstinspires.ftc.teamcode.util.Constants;
 import org.firstinspires.ftc.teamcode.util.experiments.AprilLimeDetect;
 import org.firstinspires.ftc.teamcode.util.experiments.ServoTest;
 
-public class Ophelia extends Robot {
+public class Ganymede extends Robot {
     // INSTANCE VARIABLES
     public LinearOpMode opMode;
     public GamepadEx player1;
@@ -45,7 +44,7 @@ public class Ophelia extends Robot {
      *
      * @param opMode The selected operation mode
      */
-    public Ophelia(LinearOpMode opMode) {
+    public Ganymede(LinearOpMode opMode) {
         this.opMode = opMode;
         this.hardwareMap = opMode.hardwareMap;
         this.telemetry = opMode.telemetry;
@@ -56,7 +55,7 @@ public class Ophelia extends Robot {
     }
 
     // OVERLOADED CONSTRUCTOR THAT RESPONDS TO AUTONOMOUS OPMODE USER QUERY
-    public Ophelia(LinearOpMode opMode, boolean isRed, boolean left) {
+    public Ganymede(LinearOpMode opMode, boolean isRed, boolean left) {
         this.opMode = opMode;
         this.hardwareMap = opMode.hardwareMap;
         this.telemetry = opMode.telemetry;

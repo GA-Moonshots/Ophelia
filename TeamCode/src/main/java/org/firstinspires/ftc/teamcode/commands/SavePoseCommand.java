@@ -3,14 +3,14 @@ package org.firstinspires.ftc.teamcode.commands;
 import com.acmerobotics.roadrunner.Pose2d;
 import com.seattlesolvers.solverslib.command.CommandBase;
 
-import org.firstinspires.ftc.teamcode.Ophelia;
+import org.firstinspires.ftc.teamcode.Ganymede;
 import org.firstinspires.ftc.teamcode.subsystems.Mecanum;
 import org.firstinspires.ftc.teamcode.util.PersistentPoseManager;
 
 public class SavePoseCommand extends CommandBase {
     private final Mecanum driveSubsystem;
 
-    public SavePoseCommand(Ophelia robot) {
+    public SavePoseCommand(Ganymede robot) {
         this.driveSubsystem = robot.mecanum;
     }
 
